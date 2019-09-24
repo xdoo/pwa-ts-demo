@@ -34,17 +34,15 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import Sample from "@/components/Sample.vue";
-import GetGeolocation from "@/components/GetGeolocation.vue"
+import Sample from '@/components/Sample.vue';
+import GetGeolocation from '@/components/GetGeolocation.vue';
 
 @Component({
   components: {
     Sample,
-    GetGeolocation
-  }
+    GetGeolocation,
+  },
 })
-export default class HelloWorld extends Vue{
-  
-
-};
+export default class HelloWorld extends Vue {
+}
 </script>

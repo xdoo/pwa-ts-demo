@@ -22,8 +22,8 @@
   </v-container>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import Component from "vue-class-component";
+import Vue from 'vue';
+import Component from 'vue-class-component';
 
 @Component({})
 export default class GetGeolocation extends Vue {
@@ -31,15 +31,14 @@ export default class GetGeolocation extends Vue {
   private lat: any;
   private lng: any;
 
-  currentLocation(): void {
-    if ("geolocation" in navigator) {
+  private currentLocation(): void {
+    if ('geolocation' in navigator) {
 
       navigator.geolocation.getCurrentPosition((position) => {
-        console.log(position.coords.latitude)
-        this.lat = position.coords.latitude
-        this.lng = position.coords.longitude
-      })
-    } else {
+        console.log(position.coords.latitude);
+        this.lat = position.coords.latitude;
+        this.lng = position.coords.longitude;
+      });
     }
   }
 }
