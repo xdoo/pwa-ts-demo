@@ -28,14 +28,13 @@ import Component from 'vue-class-component';
 @Component({})
 export default class GetGeolocation extends Vue {
 
-  private lat: any;
-  private lng: any;
+  private lat: number = 0.0;
+  private lng: number = 0.0;
 
   private currentLocation(): void {
     if ('geolocation' in navigator) {
 
       navigator.geolocation.getCurrentPosition((position) => {
-        console.log(position.coords.latitude);
         this.lat = position.coords.latitude;
         this.lng = position.coords.longitude;
       });
