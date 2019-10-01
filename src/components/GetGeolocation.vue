@@ -15,8 +15,12 @@
         </v-btn>
       </v-flex>
 
-      <v-flex xs8>
-        Lat: {{lat}} Lng: {{lng}}
+      <v-flex xs4>
+        Lat: {{lat}}
+      </v-flex>
+
+      <v-flex xs4>
+        Lng: {{lng}}
       </v-flex>
     </v-layout>
   </v-container>

@@ -28,6 +28,10 @@
       <v-flex xs12>
         <get-geolocation></get-geolocation>
       </v-flex>
+
+      <v-flex xs12>
+        <http-bin-request></http-bin-request>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -36,11 +40,13 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import Sample from '@/components/Sample.vue';
 import GetGeolocation from '@/components/GetGeolocation.vue';
+import HttpBinRequest from '@/components/HttpBinRequest.vue';
 
 @Component({
   components: {
     Sample,
     GetGeolocation,
+    HttpBinRequest,
   },
 })
 export default class HelloWorld extends Vue {
